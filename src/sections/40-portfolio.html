@@ -263,6 +263,27 @@
   #portfolio .pf-lb-close:hover,
   #portfolio .pf-lb-close:focus-visible { opacity: 1; }
 
+  /* mobile lightbox: room for the caption, slimmer rails, contained scroll */
+  @media (max-width: 640px) {
+    #portfolio .pf-lightbox {
+      padding: 1rem;
+      overscroll-behavior: contain;
+      touch-action: pan-y;
+    }
+    #portfolio .pf-lb-img { max-height: 60vh; max-width: 88vw; }
+    #portfolio .pf-lb-figure { max-width: 88vw; gap: 1rem; }
+    #portfolio .pf-lb-cap { max-width: 82vw; }
+    #portfolio .pf-lb-nav { width: 2.9rem; opacity: 0.8; }
+    #portfolio .pf-lb-close {
+      width: 3.25rem;
+      height: 3.25rem;
+      top: max(0.6rem, env(safe-area-inset-top));
+      right: 0.6rem;
+    }
+    /* single column breathes more between pieces */
+    #portfolio .pf-figure { margin-bottom: 2.4rem; }
+  }
+
   @media (prefers-reduced-motion: reduce) {
     #portfolio .pf-lightbox,
     #portfolio .pf-lb-img { transition: none !important; }
@@ -358,6 +379,20 @@
       document.documentElement.style.overflow = prevHtmlOverflow;
       document.body.style.overflow = prevBodyOverflow;
     }
+
+    /* touch: swipe left/right to navigate, swipe down to close */
+    var swipeX = null, swipeY = null;
+    overlay.addEventListener('touchstart', function (e) {
+      if (e.touches.length === 1) { swipeX = e.touches[0].clientX; swipeY = e.touches[0].clientY; }
+    }, { passive: true });
+    overlay.addEventListener('touchend', function (e) {
+      if (swipeX === null || !isOpen) return;
+      var dx = e.changedTouches[0].clientX - swipeX;
+      var dy = e.changedTouches[0].clientY - swipeY;
+      swipeX = swipeY = null;
+      if (Math.abs(dx) > 48 && Math.abs(dx) > Math.abs(dy) * 1.4) navigate(dx < 0 ? 1 : -1);
+      else if (dy > 72 && Math.abs(dy) > Math.abs(dx) * 1.4) close();
+    }, { passive: true });
 
     function onKey(e) {
       if (!isOpen) return;

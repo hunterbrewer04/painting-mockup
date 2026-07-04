@@ -96,7 +96,9 @@ body {
   line-height: 1.7;
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
+  -webkit-tap-highlight-color: transparent;
 }
+a, button, input, select, textarea, [role="button"] { touch-action: manipulation; }
 
 h1, h2, h3, h4 {
   font-family: var(--serif);
@@ -254,6 +256,15 @@ section { scroll-margin-top: 4.5rem; }
 
 /* keyboard focus */
 :focus-visible { outline: 2px solid var(--bronze); outline-offset: 3px; }
+
+/* touch ergonomics: grow text-link hit areas without shifting layout */
+@media (pointer: coarse) {
+  .av-link {
+    padding-block: 0.7rem;
+    margin-block: -0.7rem;
+  }
+  .av-btn { padding: 1.15rem 2.2rem; }
+}
 
 /* custom cursor active state hides native only on fine pointers */
 @media (pointer: fine) {

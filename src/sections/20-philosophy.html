@@ -139,6 +139,19 @@
     margin: 0;
   }
 
+  /* mobile composition: brush tucks into the vault's lower-right,
+     no stray void; principles carry their own rules so the divider goes */
+  @media (max-width: 899.98px) {
+    #philosophy .phi-fig--brush {
+      width: 62%;
+      margin-top: -12%;
+      margin-left: auto;
+      margin-right: calc(-0.35 * var(--gut));
+    }
+    #philosophy .phi-divide { display: none; }
+    #philosophy .phi-collage { margin-bottom: clamp(3rem, 9vw, 5rem); }
+  }
+
   /* desktop composition */
   @media (min-width: 900px) {
     #philosophy .phi-grid {
