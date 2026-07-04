@@ -1,0 +1,235 @@
+<section id="process">
+  <div class="av-container prc-wrap">
+
+    <header class="prc-head">
+      <p class="av-eyebrow" data-reveal>The process</p>
+      <h2 class="prc-title" data-reveal>Slow is a schedule, not an accident.</h2>
+      <p class="prc-sub" data-reveal>
+        Five stages, in order, each allowed the time it asks for. Nothing on a
+        Vermeil project is hurried into place.
+      </p>
+    </header>
+
+    <div class="prc-timeline" data-reveal-group data-reveal-stagger="0.12">
+
+      <div class="prc-spine" aria-hidden="true">
+        <span class="prc-progress"></span>
+      </div>
+
+      <div class="prc-steps">
+
+        <div class="prc-step prc-step--1" data-reveal>
+          <span class="prc-num" aria-hidden="true">01</span>
+          <div class="prc-body">
+            <h3 class="prc-step-title">Consultation</h3>
+            <p class="prc-copy">
+              We walk the rooms with you, in the light they actually live in.
+              Scope and honesty first, before a single price is spoken.
+            </p>
+          </div>
+        </div>
+
+        <div class="prc-step prc-step--2" data-reveal>
+          <span class="prc-num" aria-hidden="true">02</span>
+          <div class="prc-body">
+            <h3 class="prc-step-title">Specification</h3>
+            <p class="prc-copy">
+              A written finish schedule &mdash; colours, sheens, systems, cure
+              times. Nothing on site is improvised, and nothing is left to memory.
+            </p>
+          </div>
+        </div>
+
+        <figure class="prc-photo prc-photo--ladder">
+          <div class="av-frame prc-frame" data-reveal="mask">
+            <img src="{{IMG:proc-ladder}}" width="900" height="1199"
+                 alt="Stepladder in an empty room, monochrome" loading="lazy">
+          </div>
+          <figcaption class="prc-cap">
+            <span class="av-serif-i">Preparation, day two.</span>
+          </figcaption>
+        </figure>
+
+        <div class="prc-step prc-step--3" data-reveal>
+          <span class="prc-num" aria-hidden="true">03</span>
+          <div class="prc-body">
+            <h3 class="prc-step-title">Preparation</h3>
+            <p class="prc-copy">
+              Protection, repair, fill, sand, prime. Nine-tenths of the hours no
+              one ever sees, spent making the wall quieter than the paint to come.
+            </p>
+          </div>
+        </div>
+
+        <div class="prc-step prc-step--4" data-reveal>
+          <span class="prc-num" aria-hidden="true">04</span>
+          <div class="prc-body">
+            <h3 class="prc-step-title">Application</h3>
+            <p class="prc-copy">
+              Small master crews, thin coats, long cures. Brushwork where
+              brushwork belongs, and a straight roller where it does not.
+            </p>
+          </div>
+        </div>
+
+        <figure class="prc-photo prc-photo--painter">
+          <div class="av-frame prc-frame" data-reveal="mask">
+            <img src="{{IMG:proc-painter}}" width="1100" height="825"
+                 alt="Painter on a ladder painting clapboard siding, monochrome" loading="lazy">
+          </div>
+          <figcaption class="prc-cap">
+            <span class="av-serif-i">Application &mdash; thin coats, long cures.</span>
+          </figcaption>
+        </figure>
+
+        <div class="prc-step prc-step--5" data-reveal>
+          <span class="prc-num" aria-hidden="true">05</span>
+          <div class="prc-body">
+            <h3 class="prc-step-title">The Reveal</h3>
+            <p class="prc-copy">
+              Furniture returned to the millimetre, a final walkthrough together,
+              and an aftercare dossier you keep for the life of the finish.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<style>
+  #process {
+    padding-block: var(--sect-pad);
+    background: var(--plaster);
+  }
+
+  #process .prc-head {
+    max-width: 24ch;
+    margin-bottom: clamp(3.5rem, 8vw, 6.5rem);
+  }
+  #process .prc-title {
+    font-size: var(--fs-h2);
+  }
+  #process .prc-sub {
+    color: var(--taupe);
+    font-size: var(--fs-small);
+    max-width: 44ch;
+    margin-bottom: 0;
+  }
+
+  /* ---- timeline shell + spine ---- */
+  #process .prc-timeline {
+    position: relative;
+    padding-left: 1.9rem;
+  }
+  #process .prc-spine {
+    position: absolute;
+    top: 0.4rem;
+    bottom: 0.4rem;
+    left: 0.65rem;
+    width: 1px;
+    background: var(--line);
+    overflow: hidden;
+  }
+  #process .prc-progress {
+    position: absolute;
+    inset: 0;
+    background: var(--bronze);
+    transform: scaleY(0);
+    transform-origin: top;
+    will-change: transform;
+  }
+
+  /* ---- steps ---- */
+  #process .prc-steps {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: clamp(3rem, 7vw, 5rem);
+  }
+  #process .prc-step {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr);
+    column-gap: clamp(1rem, 2.5vw, 1.75rem);
+    align-items: start;
+  }
+  #process .prc-num {
+    font-family: var(--serif);
+    font-weight: 300;
+    font-size: clamp(2.5rem, 8vw, 4.25rem);
+    line-height: 0.8;
+    color: var(--bronze);
+    opacity: 0.32;
+  }
+  #process .prc-step-title {
+    font-size: var(--fs-h3);
+    margin: 0.1em 0 0.6rem;
+  }
+  #process .prc-copy {
+    color: var(--taupe);
+    font-size: var(--fs-small);
+    max-width: 40ch;
+    margin: 0;
+  }
+
+  /* ---- editorial photographs ---- */
+  #process .prc-photo {
+    margin: 0;
+  }
+  #process .prc-frame {
+    width: 100%;
+  }
+  #process .prc-photo--ladder .prc-frame { aspect-ratio: 900 / 1199; }
+  #process .prc-photo--painter .prc-frame { aspect-ratio: 1100 / 825; }
+  #process .prc-cap {
+    margin-top: 0.85rem;
+    font-size: var(--fs-small);
+    color: var(--taupe);
+  }
+
+  /* ---- desktop: photos to the right, spine offset center-left ---- */
+  @media (min-width: 900px) {
+    #process .prc-timeline {
+      padding-left: clamp(2.5rem, 7vw, 6rem);
+    }
+    #process .prc-spine {
+      left: clamp(1.5rem, 4.5vw, 3.75rem);
+    }
+    #process .prc-steps {
+      grid-template-columns: minmax(0, 1fr) minmax(0, 30%);
+      column-gap: clamp(2.5rem, 6vw, 6rem);
+      align-items: start;
+    }
+    #process .prc-step--1 { grid-column: 1; grid-row: 1; }
+    #process .prc-step--2 { grid-column: 1; grid-row: 2; }
+    #process .prc-step--3 { grid-column: 1; grid-row: 3; }
+    #process .prc-step--4 { grid-column: 1; grid-row: 4; }
+    #process .prc-step--5 { grid-column: 1; grid-row: 5; }
+    #process .prc-photo--ladder { grid-column: 2; grid-row: 2 / span 2; align-self: center; }
+    #process .prc-photo--painter { grid-column: 2; grid-row: 4; align-self: center; }
+  }
+</style>
+
+<script>
+  (function () {
+    var section = document.getElementById('process');
+    if (!section) return;
+    var progress = section.querySelector('.prc-progress');
+    if (!progress) return;
+
+    if (!window.AV || window.AV.reduced) {
+      progress.style.transform = 'scaleY(1)';
+      return;
+    }
+
+    window.AV.onScroll(function () {
+      var rect = section.getBoundingClientRect();
+      var ref = window.innerHeight * 0.5;
+      var p = (ref - rect.top) / rect.height;
+      if (p < 0) p = 0;
+      if (p > 1) p = 1;
+      progress.style.transform = 'scaleY(' + p.toFixed(4) + ')';
+    });
+  })();
+</script>

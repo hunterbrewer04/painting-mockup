@@ -1,0 +1,193 @@
+<section id="testimonials" class="av-dark">
+  <div class="av-container tst-wrap" data-reveal-group data-reveal-stagger="0.12">
+
+    <header class="tst-head">
+      <p class="av-eyebrow" data-reveal>Clients</p>
+      <h2 class="tst-title" data-reveal>Kept voices.</h2>
+    </header>
+
+    <figure class="tst-item tst-item--lead" data-reveal>
+      <blockquote class="tst-quote">
+        <span class="tst-mark" aria-hidden="true">&ldquo;</span>
+        They repaired plaster we had been told was beyond saving, then painted it
+        so evenly the rooms feel taller. Months later I still find myself noticing
+        the doors.
+      </blockquote>
+      <figcaption class="tst-attr">
+        <span class="tst-mono" aria-hidden="true">EW</span>
+        <span class="tst-cite">
+          <span class="tst-name">Eleanor W.</span>
+          <span class="tst-ctx">Gramercy Park townhouse</span>
+        </span>
+      </figcaption>
+    </figure>
+
+    <hr class="av-rule tst-rule" data-reveal="line">
+
+    <div class="tst-pair">
+
+      <figure class="tst-item" data-reveal>
+        <blockquote class="tst-quote">
+          <span class="tst-mark" aria-hidden="true">&ldquo;</span>
+          The only trade on site that left each evening with the house cleaner
+          than they found it.
+        </blockquote>
+        <figcaption class="tst-attr">
+          <span class="tst-mono" aria-hidden="true">MH</span>
+          <span class="tst-cite">
+            <span class="tst-name">M. &amp; C. Harriman</span>
+            <span class="tst-ctx">Sag Harbor</span>
+          </span>
+        </figcaption>
+      </figure>
+
+      <figure class="tst-item" data-reveal>
+        <blockquote class="tst-quote">
+          <span class="tst-mark" aria-hidden="true">&ldquo;</span>
+          Our gallery needed walls that disappear. Vermeil understood that brief
+          better than we could phrase it.
+        </blockquote>
+        <figcaption class="tst-attr">
+          <span class="tst-mono" aria-hidden="true">DO</span>
+          <span class="tst-cite">
+            <span class="tst-name">D. Okafor</span>
+            <span class="tst-ctx">Gallery director, Tribeca</span>
+          </span>
+        </figcaption>
+      </figure>
+
+    </div>
+
+  </div>
+</section>
+
+<style>
+  #testimonials {
+    padding-block: var(--sect-pad);
+  }
+
+  #testimonials .tst-head {
+    margin-bottom: clamp(3rem, 7vw, 5.5rem);
+  }
+  #testimonials .tst-title {
+    font-size: var(--fs-h2);
+  }
+
+  #testimonials .tst-item {
+    margin: 0;
+  }
+  #testimonials .tst-quote {
+    position: relative;
+    margin: 0;
+    padding-left: clamp(2.25rem, 5vw, 3.5rem);
+    font-family: var(--serif);
+    font-weight: 300;
+    letter-spacing: -0.01em;
+    color: var(--plaster);
+    text-wrap: pretty;
+  }
+  #testimonials .tst-mark {
+    position: absolute;
+    top: -0.12em;
+    left: 0;
+    font-family: var(--serif);
+    font-style: italic;
+    font-weight: 300;
+    line-height: 1;
+    color: var(--bronze);
+  }
+
+  /* attribution */
+  #testimonials .tst-attr {
+    display: flex;
+    align-items: center;
+    gap: 0.95rem;
+    margin-top: clamp(1.5rem, 3vw, 2.25rem);
+    padding-left: clamp(2.25rem, 5vw, 3.5rem);
+  }
+  #testimonials .tst-mono {
+    flex: none;
+    width: 2.9rem;
+    height: 2.9rem;
+    border: 1px solid var(--bronze);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--serif);
+    font-weight: 400;
+    font-size: 0.85rem;
+    letter-spacing: 0.06em;
+    color: var(--bronze);
+  }
+  #testimonials .tst-cite {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.35;
+  }
+  #testimonials .tst-name {
+    font-family: var(--sans);
+    font-size: var(--fs-small);
+    font-weight: 600;
+    color: var(--plaster);
+  }
+  #testimonials .tst-ctx {
+    font-family: var(--sans);
+    font-size: var(--fs-small);
+    color: var(--taupe);
+  }
+
+  /* lead quote, oversized */
+  #testimonials .tst-item--lead .tst-quote {
+    font-size: calc(var(--fs-h3) * 1.3);
+    line-height: 1.4;
+    max-width: 26ch;
+  }
+  #testimonials .tst-item--lead .tst-mark {
+    font-size: calc(var(--fs-h3) * 2.6);
+  }
+
+  /* divider */
+  #testimonials .tst-rule {
+    margin-block: clamp(3rem, 6vw, 4.5rem);
+  }
+
+  /* the smaller pair */
+  #testimonials .tst-pair {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  #testimonials .tst-pair .tst-item + .tst-item {
+    margin-top: clamp(2.5rem, 5vw, 3.5rem);
+    padding-top: clamp(2.5rem, 5vw, 3.5rem);
+    border-top: 1px solid var(--line);
+  }
+  #testimonials .tst-pair .tst-quote {
+    font-size: var(--fs-h3);
+    line-height: 1.5;
+    max-width: 34ch;
+  }
+  #testimonials .tst-pair .tst-mark {
+    font-size: calc(var(--fs-h3) * 2);
+  }
+
+  @media (min-width: 820px) {
+    #testimonials .tst-pair {
+      grid-template-columns: 1fr 1fr;
+      gap: 0;
+    }
+    #testimonials .tst-pair .tst-item + .tst-item {
+      margin-top: 0;
+      padding-top: 0;
+      border-top: 0;
+    }
+    #testimonials .tst-pair .tst-item {
+      padding-inline: clamp(2rem, 4vw, 3.5rem);
+    }
+    #testimonials .tst-pair .tst-item:first-child { padding-left: 0; }
+    #testimonials .tst-pair .tst-item:last-child {
+      padding-right: 0;
+      border-left: 1px solid var(--line);
+    }
+  }
+</style>
