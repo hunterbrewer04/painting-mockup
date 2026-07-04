@@ -1,0 +1,259 @@
+/* ============================================================
+   ATELIER VERMEIL — design system
+   Single committed theme: plaster ground, espresso ink,
+   burnished bronze accent. The page sets every surface color
+   itself, so it renders identically in light/dark viewers.
+   ============================================================ */
+
+@font-face {
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 300;
+  src: url({{FONT:Fraunces-300-normal}}) format('woff2');
+}
+@font-face {
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 400;
+  src: url({{FONT:Fraunces-400-normal}}) format('woff2');
+}
+@font-face {
+  font-family: 'Fraunces';
+  font-style: italic;
+  font-weight: 300;
+  src: url({{FONT:Fraunces-300-italic}}) format('woff2');
+}
+@font-face {
+  font-family: 'Hanken Grotesk';
+  font-style: normal;
+  font-weight: 400;
+  src: url({{FONT:HankenGrotesk-400-normal}}) format('woff2');
+}
+@font-face {
+  font-family: 'Hanken Grotesk';
+  font-style: italic;
+  font-weight: 400;
+  src: url({{FONT:HankenGrotesk-400-italic}}) format('woff2');
+}
+@font-face {
+  font-family: 'Hanken Grotesk';
+  font-style: normal;
+  font-weight: 500;
+  src: url({{FONT:HankenGrotesk-500-normal}}) format('woff2');
+}
+@font-face {
+  font-family: 'Hanken Grotesk';
+  font-style: normal;
+  font-weight: 600;
+  src: url({{FONT:HankenGrotesk-600-normal}}) format('woff2');
+}
+
+:root {
+  /* color */
+  --plaster: #EFEAE3;
+  --bone: #E5DED2;
+  --ink: #211E1A;
+  --char: #1C1916;        /* dark chapter ground */
+  --char-2: #262119;      /* dark raised surface */
+  --taupe: #837868;
+  --bronze: #9C7B4A;
+  --bronze-2: #C5A468;    /* bronze on dark grounds */
+  --line: rgba(33, 30, 26, 0.16);
+  --line-dark: rgba(239, 234, 227, 0.16);
+  --paper-max: 1280px;
+
+  /* type */
+  --serif: 'Fraunces', 'Iowan Old Style', Georgia, serif;
+  --sans: 'Hanken Grotesk', 'Avenir Next', 'Segoe UI', sans-serif;
+  --fs-display: clamp(2.75rem, 7.2vw, 6.25rem);
+  --fs-h2: clamp(2.1rem, 4.2vw, 3.5rem);
+  --fs-h3: clamp(1.3rem, 1.8vw, 1.55rem);
+  --fs-body: 1.0625rem;
+  --fs-small: 0.9rem;
+  --fs-eyebrow: 0.72rem;
+
+  /* motion — slow, deliberate */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-inout: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-slow: 1.1s;
+  --dur-med: 0.7s;
+  --dur-fast: 0.35s;
+
+  /* rhythm */
+  --sect-pad: clamp(6rem, 12vw, 10.5rem);
+  --gut: clamp(1.25rem, 4vw, 3rem);
+}
+
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+body {
+  margin: 0;
+  background: var(--plaster);
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: var(--fs-body);
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--serif);
+  font-weight: 300;
+  line-height: 1.08;
+  letter-spacing: -0.01em;
+  margin: 0 0 0.6em;
+  text-wrap: balance;
+}
+p { margin: 0 0 1.2em; max-width: 62ch; }
+img { max-width: 100%; display: block; }
+a { color: inherit; }
+::selection { background: var(--bronze); color: var(--plaster); }
+
+section { scroll-margin-top: 4.5rem; }
+
+/* ---- shared primitives ---- */
+.av-container {
+  max-width: var(--paper-max);
+  margin-inline: auto;
+  padding-inline: var(--gut);
+}
+
+.av-eyebrow {
+  font-family: var(--sans);
+  font-size: var(--fs-eyebrow);
+  font-weight: 600;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--bronze);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.9rem;
+  margin-bottom: 1.6rem;
+}
+.av-eyebrow::before {
+  content: "";
+  width: 2.4rem;
+  height: 1px;
+  background: var(--bronze);
+  opacity: 0.7;
+}
+
+.av-serif-i { font-family: var(--serif); font-style: italic; font-weight: 300; }
+
+/* hairline rule */
+.av-rule { border: 0; border-top: 1px solid var(--line); margin: 0; }
+
+/* buttons — bronze sweep on hover */
+.av-btn {
+  --btn-fg: var(--ink);
+  position: relative;
+  display: inline-block;
+  font-family: var(--sans);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--btn-fg);
+  padding: 1.05rem 2.2rem;
+  border: 1px solid currentColor;
+  border-radius: 0;
+  background: transparent;
+  cursor: pointer;
+  overflow: hidden;
+  isolation: isolate;
+  transition: color var(--dur-fast) ease, border-color var(--dur-fast) ease;
+}
+.av-btn::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--bronze);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.55s var(--ease-out);
+  z-index: -1;
+}
+.av-btn:hover, .av-btn:focus-visible { color: var(--plaster); border-color: var(--bronze); }
+.av-btn:hover::after, .av-btn:focus-visible::after { transform: scaleX(1); }
+.av-btn--solid { background: var(--ink); color: var(--plaster); border-color: var(--ink); }
+
+/* text links — underline draw */
+.av-link {
+  text-decoration: none;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-size: 0% 1px;
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 0.5s var(--ease-out), color var(--dur-fast) ease;
+  padding-bottom: 2px;
+}
+.av-link:hover, .av-link:focus-visible { background-size: 100% 1px; color: var(--bronze); }
+
+/* framed image w/ slow zoom hover */
+.av-frame { overflow: hidden; position: relative; }
+.av-frame img {
+  width: 100%; height: 100%; object-fit: cover;
+  transform: scale(1.001);
+  transition: transform 1.4s var(--ease-out);
+}
+.av-frame:hover img { transform: scale(1.045); }
+
+/* dark chapters re-map tokens */
+.av-dark {
+  background: var(--char);
+  color: var(--plaster);
+  --line: var(--line-dark);
+  --taupe: #A79A87;
+  --bronze: var(--bronze-2);
+}
+.av-dark .av-btn { --btn-fg: var(--plaster); }
+.av-dark ::selection { background: var(--bronze-2); color: var(--char); }
+
+/* ---- scroll reveals (init in shared.js) ---- */
+[data-reveal] {
+  opacity: 0;
+  transform: translateY(30px);
+  transition:
+    opacity var(--dur-slow) var(--ease-out),
+    transform var(--dur-slow) var(--ease-out);
+  transition-delay: var(--reveal-delay, 0s);
+  will-change: opacity, transform;
+}
+[data-reveal="fade"] { transform: none; }
+[data-reveal="left"] { transform: translateX(-36px); }
+[data-reveal="right"] { transform: translateX(36px); }
+[data-reveal="line"] { transform: scaleX(0); transform-origin: left; }
+[data-reveal="mask"] {
+  transform: none;
+  clip-path: inset(0 0 100% 0);
+  transition:
+    opacity var(--dur-slow) var(--ease-out),
+    clip-path 1.2s var(--ease-out);
+  transition-delay: var(--reveal-delay, 0s);
+}
+.is-revealed[data-reveal] {
+  opacity: 1;
+  transform: none;
+  clip-path: inset(0 0 0% 0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  [data-reveal], .is-revealed[data-reveal] {
+    opacity: 1 !important;
+    transform: none !important;
+    clip-path: none !important;
+    transition: none !important;
+  }
+  .av-frame img, .av-btn::after { transition: none !important; }
+}
+
+/* keyboard focus */
+:focus-visible { outline: 2px solid var(--bronze); outline-offset: 3px; }
+
+/* custom cursor active state hides native only on fine pointers */
+@media (pointer: fine) {
+  body.av-cursor-on a, body.av-cursor-on button, body.av-cursor-on [data-cursor] { cursor: none; }
+}

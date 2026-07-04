@@ -1,0 +1,189 @@
+{
+ "g-door": {
+  "image_id": "a390d69bbd808688",
+  "title": "Main town, doorway",
+  "author": "Julie Lyn",
+  "author_profile": "https://www.flickr.com/people/14486460@N00/",
+  "source": "https://www.flickr.com/photos/14486460@N00/6917399327",
+  "license": "CC BY 2.0",
+  "license_url": "https://creativecommons.org/licenses/by/2.0/",
+  "via": "Open Images Dataset (Flickr)",
+  "modifications": "cropped, resized, color-graded"
+ },
+ "svc-interior": {
+  "image_id": "e28339ea57d1e17c",
+  "title": "Berkeley, California",
+  "author": "Sharon Hahn Darlin",
+  "author_profile": "https://www.flickr.com/people/sharonhahndarlin/",
+  "source": "https://www.flickr.com/photos/sharonhahndarlin/16567100720",
+  "license": "CC BY 2.0",
+  "license_url": "https://creativecommons.org/licenses/by/2.0/",
+  "via": "Open Images Dataset (Flickr)",
+  "modifications": "cropped, resized, color-graded"
+ },
+ "svc-color": {
+  "image_id": "2ba65cfdd4fc2069",
+  "title": "Brushes",
+  "author": "Hafiz Issadeen",
+  "author_profile": "https://www.flickr.com/people/yimhafiz/",
+  "source": "https://www.flickr.com/photos/yimhafiz/4016677319",
+  "license": "CC BY 2.0",
+  "license_url": "https://creativecommons.org/licenses/by/2.0/",
+  "via": "Open Images Dataset (Flickr)",
+  "modifications": "cropped, resized, color-graded"
+ },
+ "g-spiral": {
+  "image_id": "0cccffa267fce7bb",
+  "title": "Hotel Spiral Staircase",
+  "author": "David Blaikie",
+  "author_profile": "https://www.flickr.com/people/nikonvscanon/",
+  "source": "https://www.flickr.com/photos/nikonvscanon/1302296182",
+  "license": "CC BY 2.0",
+  "license_url": "https://creativecommons.org/licenses/by/2.0/",
+  "via": "Open Images Dataset (Flickr)",
+  "modifications": "cropped, resized, color-graded and converted to monochrome"
+ },
+ "g-neoclassical": {
+  "image_id": "5805f0735dbeaf9e",
+  "title": "5. Stone Facade #2",
+  "author": "local louisville",
+  "author_profile": "https://www.flickr.com/people/local_louisville/",
+  "source": "https://www.flickr.com/photos/local_louisville/4302135036",
+  "license": "CC BY 2.0",
+  "license_url": "https://creativecommons.org/licenses/by/2.0/",
+  "via": "Open Images Dataset (Flickr)",
+  "modifications": "cropped, resized, color-graded"
+ },
+ "vault": {
+  "image_id": "2013401114871480",
+  "title": "Grundtvig's Church, Copenhagen",
+  "author": "Jamie Hamilton",
+  "author_profile": "https://www.flickr.com/people/eljambere/",
+  "source": "https://www.flickr.com/photos/eljambere/15692634555",
+  "license": "CC BY 2.0",
+  "license_url": "https://creativecommons.org/licenses/by/2.0/",
+  "via": "Open Images Dataset (Flickr)",
+  "modifications": "cropped, resized, color-graded"
+ },
+ "g-victorian": {
+  "image_id": "554e2ce74443f55b",
+  "title": "Yokohama_407",
+  "author": "ajari",
+  "author_profile": "https://www.flickr.com/people/ajari/",
+  "source": "https://www.flickr.com/photos/ajari/8703356469",
+  "license": "CC BY 2.0",
+  "license_url": "https://creativecommons.org/licenses/by/2.0/",
+  "via": "Open Images Dataset (Flickr)",
+  "modifications": "cropped, resized, color-graded"
+ },
+ "proc-painter": {
+  "image_id": "5838182af71714c6",
+  "title": "Caroline painting house 7-7-13",
+  "author": "Steven Depolo",
+  "author_profile": "https://www.flickr.com/people/stevendepolo/",
+  "source": "https://www.flickr.com/photos/stevendepolo/9237411956",
+  "license": "CC BY 2.0",
+  "license_url": "https://creativecommons.org/licenses/by/2.0/",
+  "via": "Open Images Dataset (Flickr)",
+  "modifications": "cropped, resized, color-graded and converted to monochrome"
+ },
+ "svc-exterior": {
+  "image_id": "eb8fa03831728ead",
+  "title": "Mairie de Saint-Jacques-sur-Darn\u00e9tal",
+  "author": "Fr\u00e9d\u00e9ric BISSON",
+  "author_profile": "https://www.flickr.com/people/zigazou76/",
+  "source": "https://www.flickr.com/photos/zigazou76/20528862929",
+  "license": "CC BY 2.0",
+  "license_url": "https://creativecommons.org/licenses/by/2.0/",
+  "via": "Open Images Dataset (Flickr)",
+  "modifications": "cropped, resized, color-graded"
+ },
+ "hero": {
+  "image_id": "9961151b15ecae0e",
+  "title": "261",
+  "author": "Maggie Stephens",
+  "author_profile": "https://www.flickr.com/people/maggiew/",
+  "source": "https://www.flickr.com/photos/maggiew/14082377517",
+  "license": "CC BY 2.0",
+  "license_url": "https://creativecommons.org/licenses/by/2.0/",
+  "via": "Open Images Dataset (Flickr)",
+  "modifications": "cropped, resized, color-graded"
+ },
+ "svc-finishes": {
+  "image_id": "5279250e0dac3a5c",
+  "title": "The Portico Ceiling in Osterley House",
+  "author": "Maxwell Hamilton",
+  "author_profile": "https://www.flickr.com/people/mualphachi/",
+  "source": "https://www.flickr.com/photos/mualphachi/7650958500",
+  "license": "CC BY 2.0",
+  "license_url": "https://creativecommons.org/licenses/by/2.0/",
+  "via": "Open Images Dataset (Flickr)",
+  "modifications": "cropped, resized, color-graded"
+ },
+ "g-banister": {
+  "image_id": "98cff9a2f4de89f9",
+  "title": "Banister",
+  "author": "Joe Bielawa",
+  "author_profile": "https://www.flickr.com/people/joebielawa/",
+  "source": "https://www.flickr.com/photos/joebielawa/3692996866",
+  "license": "CC BY 2.0",
+  "license_url": "https://creativecommons.org/licenses/by/2.0/",
+  "via": "Open Images Dataset (Flickr)",
+  "modifications": "cropped, resized, color-graded"
+ },
+ "g-lobby": {
+  "image_id": "8f89ca2f1c5deaa4",
+  "title": "Peabody Hotel Lobby",
+  "author": "bearclau",
+  "author_profile": "https://www.flickr.com/people/bearclau/",
+  "source": "https://www.flickr.com/photos/bearclau/24467646",
+  "license": "CC BY 2.0",
+  "license_url": "https://creativecommons.org/licenses/by/2.0/",
+  "via": "Open Images Dataset (Flickr)",
+  "modifications": "cropped, resized, color-graded"
+ },
+ "g-chardoor": {
+  "image_id": "45abf2a45e4557e1",
+  "title": "Doorway, Nantucket",
+  "author": "Martyn Smith",
+  "author_profile": "https://www.flickr.com/people/tinz/",
+  "source": "https://www.flickr.com/photos/tinz/14677302076",
+  "license": "CC BY 2.0",
+  "license_url": "https://creativecommons.org/licenses/by/2.0/",
+  "via": "Open Images Dataset (Flickr)",
+  "modifications": "cropped, resized, color-graded"
+ },
+ "proc-ladder": {
+  "image_id": "aa4671872230edae",
+  "title": "Sun Dragon Hardware",
+  "author": "Christopher Adams",
+  "author_profile": "https://www.flickr.com/people/christopheradams/",
+  "source": "https://www.flickr.com/photos/christopheradams/20999566789",
+  "license": "CC BY 2.0",
+  "license_url": "https://creativecommons.org/licenses/by/2.0/",
+  "via": "Open Images Dataset (Flickr)",
+  "modifications": "cropped, resized, color-graded and converted to monochrome"
+ },
+ "g-mansard": {
+  "image_id": "01a07e591ac3aeff",
+  "title": "Villa Gustav K\u00fchn (Seitenaufnahme)",
+  "author": "HaPe_Gera",
+  "author_profile": "https://www.flickr.com/people/hape_gera/",
+  "source": "https://www.flickr.com/photos/hape_gera/21344987113",
+  "license": "CC BY 2.0",
+  "license_url": "https://creativecommons.org/licenses/by/2.0/",
+  "via": "Open Images Dataset (Flickr)",
+  "modifications": "cropped, resized, color-graded"
+ },
+ "brush": {
+  "image_id": "242ec0af7f7101ef",
+  "title": "12mm",
+  "author": "Paul Wilkinson",
+  "author_profile": "https://www.flickr.com/people/eepaul/",
+  "source": "https://www.flickr.com/photos/eepaul/6807368606",
+  "license": "CC BY 2.0",
+  "license_url": "https://creativecommons.org/licenses/by/2.0/",
+  "via": "Open Images Dataset (Flickr)",
+  "modifications": "cropped, resized, color-graded"
+ }
+}

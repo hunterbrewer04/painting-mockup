@@ -1,0 +1,165 @@
+<section id="philosophy">
+  <div class="av-container phi-wrap">
+
+    <div class="phi-grid">
+      <div class="phi-intro">
+        <p class="av-eyebrow" data-reveal>The studio</p>
+        <h2 class="phi-lede" data-reveal>
+          We treat paint the way restorers treat gilding &mdash; as the last,
+          most visible <span class="av-serif-i">act of architecture</span>.
+        </h2>
+        <div class="phi-copy" data-reveal>
+          <p>
+            We work in small crews, one project at a time. A single foreman
+            stays with a house from the first survey to the final coat, so
+            nothing is handed off and nothing is hurried.
+          </p>
+          <p>
+            Surfaces are diagnosed before they are dressed. We read the
+            substrate, the moisture, the old sheens beneath, then let the cure
+            times set the schedule rather than the other way around.
+          </p>
+        </div>
+      </div>
+
+      <div class="phi-collage" data-reveal-group data-reveal-stagger="0.14">
+        <figure class="av-frame phi-fig phi-fig--vault" data-reveal="mask">
+          <img src="{{IMG:vault}}" width="1300" height="860"
+               alt="Cream vaulted plaster ceiling seen from below" loading="lazy">
+        </figure>
+        <figure class="av-frame phi-fig phi-fig--brush" data-reveal="mask">
+          <img src="{{IMG:brush}}" width="1200" height="900"
+               alt="Flat brush resting on freshly lacquered oxblood surface" loading="lazy">
+        </figure>
+      </div>
+    </div>
+
+    <hr class="av-rule phi-divide" data-reveal="line">
+
+    <ul class="phi-principles" data-reveal-group data-reveal-stagger="0.12">
+      <li class="phi-principle" data-reveal>
+        <h3 class="phi-principle-title">Preparation</h3>
+        <p class="phi-principle-text">
+          Nine-tenths of the hours are spent before the first coat &mdash;
+          filling, sanding, sealing, until the wall is quieter than the paint
+          that will cover it.
+        </p>
+      </li>
+      <li class="phi-principle" data-reveal>
+        <h3 class="phi-principle-title">Pigment</h3>
+        <p class="phi-principle-text">
+          Full-bodied mineral paints, mixed to the light of the room. We sample
+          each colour on the actual surface and watch it through a full day
+          before we commit.
+        </p>
+      </li>
+      <li class="phi-principle" data-reveal>
+        <h3 class="phi-principle-title">Patience</h3>
+        <p class="phi-principle-text">
+          Schedules bend to cure times, not the reverse. A finish left to settle
+          properly outlasts one rushed to a deadline by a decade or more.
+        </p>
+      </li>
+    </ul>
+
+  </div>
+</section>
+
+<style>
+  #philosophy {
+    padding-block: var(--sect-pad);
+    background: var(--plaster);
+  }
+
+  #philosophy .phi-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: clamp(3rem, 7vw, 6rem);
+    align-items: start;
+  }
+
+  #philosophy .phi-lede {
+    font-size: var(--fs-h2);
+    max-width: 18ch;
+  }
+  #philosophy .phi-copy p {
+    color: var(--taupe);
+    max-width: 46ch;
+  }
+  #philosophy .phi-copy p:last-child { margin-bottom: 0; }
+
+  /* collage */
+  #philosophy .phi-collage {
+    position: relative;
+    width: 100%;
+  }
+  #philosophy .phi-fig { margin: 0; }
+  #philosophy .phi-fig--vault {
+    width: 100%;
+    aspect-ratio: 1300 / 860;
+  }
+  #philosophy .phi-fig--brush {
+    width: 58%;
+    aspect-ratio: 1200 / 900;
+    margin-top: -14%;
+    margin-left: -6%;
+    box-shadow: 0 24px 60px -30px rgba(28, 25, 22, 0.55);
+    position: relative;
+  }
+
+  /* divider + principles */
+  #philosophy .phi-divide {
+    margin-block: clamp(3.5rem, 7vw, 6rem);
+    width: 100%;
+  }
+
+  #philosophy .phi-principles {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: clamp(2.25rem, 4vw, 3.25rem);
+  }
+  #philosophy .phi-principle-title {
+    font-family: var(--sans);
+    font-size: var(--fs-eyebrow);
+    font-weight: 600;
+    letter-spacing: 0.24em;
+    text-transform: uppercase;
+    color: var(--ink);
+    margin: 0 0 1rem;
+    padding-top: 0.35rem;
+    border-top: 1px solid var(--line);
+  }
+  #philosophy .phi-principle-text {
+    color: var(--taupe);
+    font-size: var(--fs-small);
+    max-width: 34ch;
+    margin: 0;
+  }
+
+  /* desktop composition */
+  @media (min-width: 900px) {
+    #philosophy .phi-grid {
+      grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.08fr);
+      gap: clamp(3rem, 6vw, 7rem);
+    }
+    #philosophy .phi-intro {
+      position: sticky;
+      top: 5.5rem;
+    }
+    #philosophy .phi-collage {
+      padding-bottom: 3rem;
+    }
+    #philosophy .phi-fig--brush {
+      width: 52%;
+      margin-top: -20%;
+      margin-left: -10%;
+    }
+    #philosophy .phi-principles {
+      grid-template-columns: repeat(3, 1fr);
+      gap: clamp(2rem, 4vw, 4rem);
+    }
+  }
+</style>

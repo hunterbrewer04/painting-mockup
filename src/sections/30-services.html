@@ -1,0 +1,170 @@
+<section id="services">
+  <div class="av-container">
+
+    <header class="svc-head">
+      <p class="av-eyebrow" data-reveal>Services</p>
+      <h2 class="svc-title" data-reveal>Four disciplines, one standard.</h2>
+      <p class="svc-sub" data-reveal>
+        From a first coat on new plaster to gilded detail restored by hand &mdash;
+        the same crew, the same finish schedule, the same patience throughout.
+      </p>
+    </header>
+
+    <div class="svc-rows">
+
+      <article class="svc-row" data-reveal-group>
+        <figure class="av-frame svc-media" data-reveal="mask">
+          <img src="{{IMG:svc-interior}}" width="1200" height="900"
+               alt="White kitchen with lantern pendant and marble island" loading="lazy">
+        </figure>
+        <div class="svc-text" data-reveal style="--reveal-delay:.12s">
+          <p class="svc-label">Interiors</p>
+          <h3 class="svc-name">Rooms finished to be lived in</h3>
+          <p class="svc-copy">
+            Walls, ceilings, trim and millwork carried through in full-bodied
+            mineral finishes. Every room is masked, dust-sealed and worked under
+            a furniture-safe site protocol, so the house stays a home while we
+            are in it.
+          </p>
+          <a class="av-link svc-link" href="#contact">Enquire &rarr;</a>
+        </div>
+      </article>
+
+      <article class="svc-row svc-row--flip" data-reveal-group>
+        <figure class="av-frame svc-media" data-reveal="mask">
+          <img src="{{IMG:svc-exterior}}" width="1100" height="733"
+               alt="Brick château facade with flower boxes" loading="lazy">
+        </figure>
+        <div class="svc-text" data-reveal style="--reveal-delay:.12s">
+          <p class="svc-label">Exteriors</p>
+          <h3 class="svc-name">Facades built to weather</h3>
+          <p class="svc-copy">
+            Facades, render, joinery and ironwork, each treated as its own
+            problem. Systems are specified against weather and time rather than
+            the calendar, so a coat laid this spring is still holding a decade of
+            seasons later.
+          </p>
+          <a class="av-link svc-link" href="#contact">Enquire &rarr;</a>
+        </div>
+      </article>
+
+      <article class="svc-row" data-reveal-group>
+        <figure class="av-frame svc-media" data-reveal="mask">
+          <img src="{{IMG:svc-finishes}}" width="1100" height="825"
+               alt="Ornate sage-green plasterwork ceiling" loading="lazy">
+        </figure>
+        <div class="svc-text" data-reveal style="--reveal-delay:.12s">
+          <p class="svc-label">Fine Finishes</p>
+          <h3 class="svc-name">The atelier work we are named for</h3>
+          <p class="svc-copy">
+            Lacquer, limewash, Venetian plaster, cabinetry and gilded detail,
+            built up in coats and burnished by hand. This is the slow, quiet
+            craft the studio was founded on, reserved for surfaces that deserve
+            it.
+          </p>
+          <a class="av-link svc-link" href="#contact">Enquire &rarr;</a>
+        </div>
+      </article>
+
+      <article class="svc-row svc-row--flip svc-row--portrait" data-reveal-group>
+        <figure class="av-frame svc-media" data-reveal="mask">
+          <img src="{{IMG:svc-color}}" width="1000" height="1332"
+               alt="Artist brushes in a pale blue cup against plaster" loading="lazy">
+        </figure>
+        <div class="svc-text" data-reveal style="--reveal-delay:.12s">
+          <p class="svc-label">Color Consultation</p>
+          <h3 class="svc-name">A sitting with our colorists</h3>
+          <p class="svc-copy">
+            Light studies through the day, colours brushed out large on sample
+            boards, and a written finish schedule you keep. You leave knowing
+            exactly how each surface will read, in your own rooms, in your own
+            light.
+          </p>
+          <a class="av-link svc-link" href="#contact">Enquire &rarr;</a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<style>
+  #services {
+    padding-block: var(--sect-pad);
+    background: var(--plaster);
+  }
+
+  #services .svc-head {
+    max-width: 34ch;
+    margin-bottom: clamp(3rem, 6vw, 5rem);
+  }
+  #services .svc-title { font-size: var(--fs-h2); }
+  #services .svc-sub {
+    color: var(--taupe);
+    margin-bottom: 0;
+  }
+
+  #services .svc-row {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: clamp(1.75rem, 4vw, 3rem);
+    align-items: center;
+    padding-block: clamp(2.75rem, 6vw, 5rem);
+    border-top: 1px solid var(--line);
+  }
+  #services .svc-rows > .svc-row:last-child {
+    border-bottom: 1px solid var(--line);
+  }
+
+  #services .svc-media {
+    margin: 0;
+    width: 100%;
+    aspect-ratio: 1200 / 900;
+  }
+  #services .svc-row--portrait .svc-media {
+    aspect-ratio: 1000 / 1332;
+    max-height: 70vh;
+  }
+
+  #services .svc-label {
+    font-family: var(--sans);
+    font-size: var(--fs-eyebrow);
+    font-weight: 600;
+    letter-spacing: 0.24em;
+    text-transform: uppercase;
+    color: var(--bronze);
+    margin: 0 0 1rem;
+  }
+  #services .svc-name {
+    font-size: var(--fs-h3);
+    margin: 0 0 1rem;
+    transition: color var(--dur-fast) ease;
+  }
+  #services .svc-copy {
+    color: var(--taupe);
+    max-width: 48ch;
+    margin: 0 0 1.6rem;
+  }
+  #services .svc-link {
+    font-size: var(--fs-small);
+    font-weight: 500;
+  }
+
+  /* quiet bronze shift on row hover */
+  @media (hover: hover) {
+    #services .svc-row:hover .svc-name { color: var(--bronze); }
+  }
+
+  /* two-column editorial rows, alternating side */
+  @media (min-width: 860px) {
+    #services .svc-row {
+      grid-template-columns: 45% 55%;
+      gap: clamp(3rem, 6vw, 6rem);
+    }
+    #services .svc-media { order: 0; }
+    #services .svc-text { order: 1; }
+    #services .svc-row--flip .svc-media { order: 1; }
+    #services .svc-row--flip .svc-text { order: 0; }
+    #services .svc-row--portrait { grid-template-columns: 40% 60%; }
+  }
+</style>
